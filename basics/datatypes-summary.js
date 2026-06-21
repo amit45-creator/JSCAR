@@ -32,3 +32,31 @@ console.log(id ===  anotherId);
  }
 
  console.log(typeof outsideTemp);//object 
+
+
+
+ //******* *//
+
+ //stack (primitive)--> we will copy ,heap (non-primitive)--> we get reference means cahnge in original values 
+
+ let myYoutubename = "hitesh"
+ let anothername =myYoutubename
+ anothername="chaiaurcode"
+
+ console.log(myYoutubename);
+ console.log(anothername);
+
+
+ let userOne ={
+   email: "amit231354.com",
+   upi:"hfhjfa"
+ }
+
+ let userTwo =userOne
+
+ userTwo.email = " hitesh@google.com "
+
+ console.log(userOne.email);
+ console.log(userTwo.email);//  same ans
+
+ // reference means change in original values 
