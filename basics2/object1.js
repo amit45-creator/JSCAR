@@ -28,7 +28,7 @@ const obj2={3:"a",4:"b"}
 
 //const obj3={obj1,obj2}// object ke andar object 
 
-// const obj3=Object.assign({},obj1,obj2)
+// const obj3=Object.assign({},obj1,obj2)  source ,destination
 // console.log(obj3);
 
 
@@ -57,3 +57,40 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
+const course ={
+    coursename: "js in Hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor:instructor} =course
+
+console.log(courseInstructor)
+
+console.log(instructor);// isko hi bolte hai object ko destructure karna 
+
+
+// const navbar =({company})=>{//destructuring 
+
+// }
+// navbar(company="hitesh")
+
+
+
+// {
+//    "name": "amit",
+//    "coursename": "js in Hindi",
+//    "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}//api//api usually object hi milta hai 
+]
+//json ---javascript object notation 
